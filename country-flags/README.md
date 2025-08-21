@@ -8,7 +8,7 @@
 
 ### 基本用法
 
-```js
+```html
 <script>
   console.log(flags.get("US")); // 返回 🇺🇸
   console.log(flags.info("CN")); // 返回 {emoji: "🇨🇳", code: "CN", name: "中国", region: "asia"}
@@ -19,7 +19,7 @@
 
 ### 增强搜索
 
-```js
+```html
 <script>
   flags.searchFull = (query) => flags.search(query).map(c => flags.info(c));
     console.log(flags.searchFull("中国"));
